@@ -47,7 +47,7 @@ spec:
               value: "$(params.trustedArtifactsDebug)"
         steps:
           - name: setup-values
-            image: quay.io/konflux-ci/release-service-utils@sha256:3cb03b14ac9d90ff27070036ce2b50712e65aa285daeb28852254a745bb25dfc
+            image: quay.io/konflux-ci/release-service-utils@sha256:b42578b8eda9853aaac89353d184358abfff8e117c95ab6981658a0f04bf7d32
             script: |
               #!/usr/bin/env bash
               set -eux
@@ -148,7 +148,7 @@ spec:
               - name: sourceDataArtifact
                 value: $(params.sourceDataArtifact)
           - name: check-result
-            image: quay.io/konflux-ci/release-service-utils@sha256:3cb03b14ac9d90ff27070036ce2b50712e65aa285daeb28852254a745bb25dfc
+            image: quay.io/konflux-ci/release-service-utils@sha256:b42578b8eda9853aaac89353d184358abfff8e117c95ab6981658a0f04bf7d32
             script: |
               #!/usr/bin/env bash
               set -euxo pipefail
